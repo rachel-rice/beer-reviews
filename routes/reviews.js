@@ -174,6 +174,21 @@ router.get('/search/:query', ensureAuth, async (req, res) => {
   }
 })
 
+//@desc Search reviews by brewery
+//@route GET /reviews/search/:query
+router.get('/search/:query', ensureAuth, async (req, res) => {
+  try{
+      const reviews = await Review.find({brewery: new RegExp(req.query.query,'i'), status: 'public'})
+      .populate('user')
+      .sort({ createdAt: 'desc'})
+      .lean()
+     res.render('reviews/index', { reviews })
+  } catch(err){
+      console.log(err)
+      res.render('error/404')
+  }
+})
+
 // @desc    User reviews
 // @route   GET /reviews/user/:userId
 router.get('/user/:userId', ensureAuth, async (req, res) => {

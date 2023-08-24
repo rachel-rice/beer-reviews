@@ -6,6 +6,7 @@
     <thead>
         <tr>
             <th>Title</th>
+            <th>Brewery</th>
             <th>Date</th>
             <th>Status</th>
             <th></th>
@@ -15,6 +16,7 @@
         {{#each reviews}}
         <tr>
             <td><a href="/reviews/{{_id}}">{{title}}</a></td>
+            <td>{{brewery}}</td>
             <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
             <td><span class="dash-status">{{status}}</span></td>
             <td>
