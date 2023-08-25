@@ -27,4 +27,4 @@ There are many things I'd like to add to this app:
 
 ## Lessons Learned:
 
-So many things were learned here, keeping everying organized using MVC was a major emphasis. Adding the search function to search by beer and actually have it work was awesome! Handlebars is great, still working out the kinks with it though.
+So many things were learned here, keeping everying organized using MVC was a major emphasis. Adding the search function to search by beer and actually have it work was awesome! Handlebars is great, still working out the kinks with it though. Did not commit early enough and had some struggles with that. I should have uploaded the repo to github way earlier in the building process, I would have avoided many struggles.
