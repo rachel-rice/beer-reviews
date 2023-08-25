@@ -11,6 +11,11 @@ const ReviewSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
+    style: {
+        type: String,
+        required: true,
+        trim: true
+    },
     body: {
         type: String,
         required: true,

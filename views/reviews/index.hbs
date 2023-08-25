@@ -1,4 +1,4 @@
-<h1>Reviews</h1>
+<h2>User Reviews</h2>
 <ul class="search-form">
     <li>    
         <form id="search-site"  action='/reviews/search/:query' method='get'>
@@ -25,7 +25,8 @@
                 <div class="card-content center-align">
                     <h5>{{title}}</h5>
                     <h6>{{brewery}}</h6>
-                    <p>{{stripTags (truncate body 64)}}</p>
+                    <h6>{{style}}</h6>
+                    <p>{{stripTags (truncate body 66)}}</p>
                     <br>
                     <div class="chip">
                         <img src="{{user.image}}" alt="">

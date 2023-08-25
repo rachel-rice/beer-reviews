@@ -1,12 +1,13 @@
-<h6>My Reviews</h6>
+<h6>My Beer Reviews</h6>
 <h3>Welcome {{name}}</h3>
 <p>Here are your reviews</p>
 {{#if reviews}}
 <table class="striped">
     <thead>
         <tr>
-            <th>Title</th>
+            <th>Beer</th>
             <th>Brewery</th>
+            <th>Beer Style</th>
             <th>Date</th>
             <th>Status</th>
             <th></th>
@@ -17,6 +18,7 @@
         <tr>
             <td><a href="/reviews/{{_id}}">{{title}}</a></td>
             <td>{{brewery}}</td>
+            <td>{{style}}</td>
             <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
             <td><span class="dash-status">{{status}}</span></td>
             <td>

@@ -1,3 +1,6 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 p{
     margin: 10px 0 !important
 }
@@ -10,6 +13,10 @@ p{
 
 .fa-small {
     font-size: 16px !important;
+}
+
+.fa-bars{
+    color: black;
 }
 
 .btn-float {
